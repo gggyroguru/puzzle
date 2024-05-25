@@ -60,7 +60,7 @@ const App = () => {
                 <div className={'w-[90%] max-w-[15rem] grid grid-cols-3 gap-1.5 border-2 border-indigo-600 p-1.5'}>
                     {
                         box.map((e, i) => (
-                                <button className={`h-16 grid ${e === 0 && 'opacity-0'} place-items-center bg-indigo-600`}
+                                <button className={`h-16 grid ${e === 0 ? 'opacity-0 transition-none' : 'opacity-100 transition-all'} place-items-center bg-indigo-600`}
                                         key={i} onClick={() => click(e, i)} disabled={e === 0}>{e}</button>
                             )
                         )
