@@ -13,13 +13,17 @@ const App = () => {
 
         const arr = [...box]
 
-        if (arr[i + 1] === 0) {
-            arr[i + 1] = e
-            arr[i] = 0
+       if (arr[i + 1] === 0) {
+            if (i !== 2 && i !== 5) {
+                arr[i + 1] = e
+                arr[i] = 0
+            }
         }
         if (arr[i - 1] === 0) {
-            arr[i - 1] = e
-            arr[i] = 0
+            if (i !== 3 && i !== 6) {
+                arr[i - 1] = e
+                arr[i] = 0
+            }
         }
 
         if (arr[i + 3] === 0) {
