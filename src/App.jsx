@@ -61,6 +61,7 @@ const App = () => {
             <Modal box={box} steps={steps}/>
             <div className={'w-dvw h-dvh grid place-items-center'}>
                 <div className={'fixed left-0 top-6 right-0 text-center text-3xl'}>Puzzle</div>
+                <div className={'mt-20'}>steps {steps}</div>
                 <div className={'w-[90%] max-w-[15rem] grid grid-cols-3 gap-1.5 border-2 border-indigo-600 p-1.5'}>
                     {
                         box.map((e, i) => (
